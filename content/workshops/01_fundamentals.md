@@ -29,15 +29,28 @@ Models don't see words — they see tokens (roughly 0.75 words each). More impor
 
 ### Try It: Visualize Tokens with Tiktokenizer
 
-Test how many tokens your prompts use by pasting text below:
+Test how many tokens your prompts use:
 
-<iframe src="https://tiktokenizer.vercel.app/" width="100%" height="600" style="border: 1px solid #ccc; border-radius: 5px;"></iframe>
-
-**Or open in a new tab:** [Tiktokenizer](https://tiktokenizer.vercel.app/)
+**🔗 [Open Tiktokenizer in new tab](https://tiktokenizer.vercel.app/)**
 
 **Example to try:**
-- Paste the **"Bad (vague)"** prompt below and count tokens
-- Then paste the **"Good (structured)"** prompt and compare!
+1. Go to Tiktokenizer
+2. Paste the **"Bad (vague)"** prompt below and count tokens
+3. Then paste the **"Good (structured)"** prompt and compare!
+
+**Bad (vague):**
+```
+Tell me about my data.
+```
+
+**Good (structured):**
+```
+I have data/penguins.csv with 344 penguins and 8 columns. 
+Load it with readr and group by species to show average bill length and body mass. 
+Use dplyr. Show as a tibble rounded to 1 decimal.
+```
+
+**Result:** The structured prompt uses more tokens but is far more useful to the AI!
 
 ---
 
