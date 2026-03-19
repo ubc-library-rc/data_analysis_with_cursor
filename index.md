@@ -29,7 +29,9 @@ By the end of these three workshops, you will be able to:
 ## Setup
 
 ### Install Cursor
-![Cursor Logo](../img/cursor_icon_download.png)
+
+![Cursor Logo](img/cursor_icon_download.png)
+
 1. Go to [cursor.com](https://cursor.com)
 2. Click **Download** and select your OS (Mac, Windows, or Linux)
 3. Install and open Cursor
