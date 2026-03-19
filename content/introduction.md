@@ -4,9 +4,9 @@ title: Introduction
 nav_order: 1
 ---
 
-# AI Tools for Data Analysis — 3 Quick Workshops
+# AI Tools for Data Analysis — with Cursor
 
-Learn to use Cursor AI for data analysis in just 30 minutes per topic.
+Learn to use Cursor for data analysis in these 30 minutes workshop series.
 
 ---
 
@@ -17,7 +17,7 @@ Write better prompts using the prompt formula. Learn why specificity matters.
 
 **Learning Objectives**
 
-By the end of this workshop, you will be able to:
+By the end of this workshop, you will know:
 - How LLMs work and why tokens matter
 - The prompt formula: context + task + constraints + format
 - How to write focused, specific prompts that work
@@ -35,7 +35,7 @@ By the end of this workshop, you will be able to:
 ---
 
 ### **[2. Data Analysis & Visualization](workshops/02_data_analysis_visualization.md)** — 30 min  
-Create 2 charts using ggplot2. Build data visualization skills.
+Create charts using ggplot2. Build data visualization skills.
 
 **Learning Objectives**
 
@@ -84,7 +84,7 @@ By the end of this workshop, you will be able to:
 
 ### **Cursor** (Required)
 - Free IDE from [cursor.com](https://cursor.com)
-- Download and install — free tier works great
+- Download and install (free tier should work great for now)
 - Chat shortcut: `Cmd+L` (Mac) or `Ctrl+L` (Windows/Linux)
 
 
@@ -104,7 +104,9 @@ Preview of the data we'll work with:
 ![Palmer Penguins Illustrations](../img/lter_penguins.png)
 
 **🔗 [⬇️ Download Dataset (CSV)](../data/penguins.csv)** 
+
 **📚 Source:** [Palmer Penguins R Package](https://allisonhorst.github.io/palmerpenguins/) — Learn more about the dataset  
+
 **🎨 Artwork:** [Palmer Penguins Illustrations](https://allisonhorst.github.io/palmerpenguins/articles/art.html) by [@allison_horst](https://twitter.com/allison_horst)
 
 ---
@@ -134,7 +136,3 @@ Each one builds on the previous, but you can jump around if you want.
 ---
 
 **Ready? → [Start with Workshop 1: Fundamentals](workshops/01_fundamentals.md)**
-
----
-
-*These workshops are designed to be simple, practical, and doable in one lunch break.*
