@@ -113,7 +113,7 @@ Preview of the data we'll work with:
 
 ## Quick Setup
 
-![Cursor Logo Icon](../img/cursor_icon_download.png)
+![Cursor Logo Icon](/img/cursor_icon_download.png)
 
 1. Download Cursor from [cursor.com](https://cursor.com)
 2. Install and open it
