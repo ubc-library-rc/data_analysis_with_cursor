@@ -1,48 +1,47 @@
 ---
 layout: default
-title: Outline
+title: Overview
 nav_order: .5
 ---
 
-# Workshop series overview
+# Overview
+{: .no_toc }
 
-## Learning Objectives
+{:toc}
+
+## About the series
+The _AI for Coding: Data Analysis with Cursor_ series consists of three 30-minute workshops designed to help you use Large Language Models (LLMs) to support exploratory data analysis. We will introduce fundamental concepts, practice breaking down problems into actionable components, and use the [Cursor IDE](https://cursor.com/get-started) to integrate AI and code more efficiently.
+
+Each workshop focuses on a single topic with 30 minutes of teaching, followed by an optional 15 minutes for questions, discussion, and practice. Whether you're new to AI-assisted coding or looking to refine your skills, these hands-on sessions will show you practical techniques using famous [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins/) data and modern tools.
+
+To build on other [UBC Library Research Commons workshops](https://ubc-library-rc.github.io/all.html) the coding examples are in R, but the principles apply to any programming language. Complete beginners are welcome, and participants who have some experience with R and the [tidyverse](https://tidyverse.org/) packages will find it easier to follow along. 
+
+
+## Learning objectives
+
 
 By the end of these three workshops, you will be able to:
 
-1. **Write effective prompts** for AI tools using the prompt formula (context + task + constraints + format)
-2. **Create data visualizations** with ggplot2 by describing your intent to an AI
-3. **Build a complete data analysis workflow** from data loading to visualization using Cursor
+1. **write effective prompts** for ai tools using the prompt formula (context + task + constraints + format)
+2. **create data visualizations** with ggplot2 by describing your intent to an ai
+3. **build a complete data analysis workflow** from data loading to visualization using cursor
+
 
 ---
 
-## Workshop Structure
+## Workshop structure
 
-| Workshop | Focus | Duration | Key Skill |
+| workshop | focus | duration | key skill |
 |----------|-------|----------|-----------|
-| **[1. Fundamentals](content/workshops/01_fundamentals.md)** | How to ask good questions | 30 min | Writing better prompts |
-| **[2. Data Analysis & Visualization](content/workshops/02_data_analysis_visualization.md)** | Creating charts with AI | 30 min | Building visualizations |
-| **[3. Building with AI](content/workshops/03_building_with_ai.md)** | Complete analysis | 30 min | End-to-end workflow |
+| **1. Fundamentals** | how to ask good questions | 30 min | writing better prompts |
+| **2. Data analysis & visualization** | creating charts with ai | 30 min | building visualizations |
+| **3. building with AI** | complete analysis | 30 min | end-to-end workflow |
+
+For more detail see the [Workshops](content/workshops/) page.
 
 ---
 
-## Setup
+## Get ready! 
+{: .no_toc }
 
-### Install Cursor
-
-![Cursor Logo](img/cursor_icon_download.png)
-
-1. Go to [cursor.com](https://cursor.com)
-2. Click **Download** and select your OS (Mac, Windows, or Linux)
-3. Install and open Cursor
-4. Create/sign in with an account
-5. Verify Chat works: Press `Cmd+L` (Mac) or `Ctrl+L` (Windows/Linux)
-
-
----
-
-## Start Learning
-
-→ **[Go to Introduction](content/introduction.md)**
-
-
+The first workshop introduces concepts; in the second and third we invite you to practice with hands-on activities. Follow the **[Setup](content/setup.md)** page to install **R**, **Cursor**, and the **Palmer Penguins** data before you begin.

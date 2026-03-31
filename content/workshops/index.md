@@ -9,6 +9,8 @@ has_children: true
 
 Three quick 30-minute workshops to get started with AI-assisted data analysis using Cursor.
 
+**Before you start:** check **[Setup](../setup.md)** (for R, RStudio and Cursor set up).
+
 Choose your starting point:
 
 - **[1. Fundamentals](01_fundamentals.md)** — Learn the prompt formula
