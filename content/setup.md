@@ -56,10 +56,15 @@ Alternatively, run R in a **terminal inside Cursor**, or use an R extension for 
 ---
 
 ### **Cursor** (required for 2nd and 3rd workshop)
+## Quick setup
 
-- Free IDE from [cursor.com](https://cursor.com)
-- Download and install (free tier should work great for now)
-- Chat shortcut: `Cmd+L` (Mac) or `Ctrl+L` (Windows/Linux)
+![Cursor logo](../img/cursor_icon_download.png)
+
+1. Download Cursor from [cursor.com](https://cursor.com)
+2. Install and open it
+3. Sign in with an account
+4. Press `Cmd+L` (Mac) or `Ctrl+L` (Windows/Linux) to open Chat
+5. You're ready to start!
 
 ---
 
@@ -86,18 +91,6 @@ Preview of the data we'll work with:
 **Artwork:** [Palmer Penguins illustrations](https://allisonhorst.github.io/palmerpenguins/articles/art.html) by [@allison_horst](https://twitter.com/allison_horst)
 
 Save `penguins.csv` in a folder you will use with Cursor (for example a project folder that also contains `data/penguins.csv`, matching the workshop paths).
-
----
-
-## Quick setup (Cursor)
-
-![Cursor logo](../img/cursor_icon_download.png)
-
-1. Download Cursor from [cursor.com](https://cursor.com)
-2. Install and open it
-3. Sign in with an account
-4. Press `Cmd+L` (Mac) or `Ctrl+L` (Windows/Linux) to open Chat
-5. You're ready to start!
 
 ---
 
