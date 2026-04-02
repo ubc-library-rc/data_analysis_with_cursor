@@ -9,7 +9,9 @@ nav_order: 1.3
 
 {:toc}
 
-Complete this page before the hands-on workshops (especially workshops 2 and 3). You will use **Cursor** for AI-assisted coding and **R** to run the examples (ggplot2, tidyverse).
+The concepts we cover are general and apply to many languages and tools. In this series we demonstrate how to code in R using the Cursor Integrated Development Environment (IDE), which provides a simple way to incorporate AI into the coding process. We encourage you to apply what you learn in your own environments.
+
+Complete this page before the hands-on workshops (especially workshops 2 and 3). We will use **Cursor** for AI-assisted coding and **RStudio** to run the examples (ggplot2, tidyverse).
 
 ---
 
