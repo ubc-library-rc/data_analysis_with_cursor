@@ -105,8 +105,6 @@ Preview of the data we'll work with:
 
 **344 rows × 8 columns**
 
-![Palmer Penguins illustrations](../img/lter_penguins.png)
-
 **[Download dataset (CSV)](../data/penguins.csv)**
 
 **Source:** [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins/)  
