@@ -9,17 +9,11 @@ nav_order: 1.3
 
 {:toc}
 
-Before workshops **2** and **3**, work through the sections below. You will use **Cursor** for AI-assisted coding and **Python** (**pandas**, **matplotlib**) for the code examples.
+The concepts we cover are general and apply to many languages and tools. In this series we demonstrate how to code in R using the Cursor Integrated Development Environment (IDE), which provides a simple way to incorporate AI into the coding process. We encourage you to apply what you learn in your own environments.
 
----
+Complete this page before the hands-on workshops (especially workshops 2 and 3). We will use **Cursor** for AI-assisted coding and **RStudio** to run the examples (ggplot2, tidyverse).
 
-## At a glance
-
-| Check | Item |
-|-------|------|
-| ☑ | **Python 3.11+** with packages **pandas** and **matplotlib** |
-| ☑ | **Cursor** installed (free tier is fine) |
-| ☑ | **Palmer Penguins** CSV saved as `data/penguins.csv` in your project (see **Data** below) |
+For Python: We also include this exact text for Python and mention why we use the combination of these tools—one ecosystem with Cursor: many learners already use Python; notebooks/scripts in the repo feel natural next to AI chat.
 
 ---
 
@@ -27,51 +21,13 @@ Before workshops **2** and **3**, work through the sections below. You will use 
 
 ### Python
 
-**Stack:** Python **3.11 or newer**, plus **pandas** (tables) and **matplotlib** (plots). No virtual environment is required unless your school or workplace asks for one.
+**Stack:** Python **3.11 or newer**, plus **pandas** (tables) and **matplotlib** (plots). 
 
-**Install Python**
+### **Cursor** (required)
 
-1. Download from **[python.org/downloads](https://www.python.org/downloads/)** (Windows, macOS, or Linux).
-2. *Windows:* turn on **Add Python to PATH** if the installer offers it.
-3. *macOS (optional):* `brew install python` with Homebrew works too.
-
-**Check that Python runs**
-
-Open a terminal and run:
-
-```bash
-python3 --version
-```
-
-If that fails, try `python --version`. You want **3.11+**.
-
-**Install workshop packages**
-
-```bash
-pip install pandas matplotlib
-```
-
-If `pip` is not found, try `pip3` or:
-
-```bash
-python3 -m pip install pandas matplotlib
-```
-
-**Sanity check (optional)**
-
-```bash
-python3 -c "import pandas, matplotlib; print('OK:', pandas.__version__)"
-```
-
-**Optional — Jupyter (`.ipynb`)**
-
-For notebook-based demos, install when you need it:
-
-```bash
-pip install notebook
-```
-
-Then run `jupyter notebook` or open `.ipynb` files in Cursor. Skip this if you only run `.py` files.
+- Free IDE from [cursor.com](https://cursor.com)
+- Download and install (the free tier is enough for these workshops)
+- Chat shortcut: `Cmd+L` (Mac) or `Ctrl+L` (Windows/Linux)
 
 ---
 
