@@ -14,7 +14,7 @@ The _AI for Coding: Data Analysis with Cursor_ series consists of three 30-minut
 
 Each workshop focuses on a single topic with 30 minutes of teaching, followed by an optional 15 minutes for questions, discussion, and practice. Whether you're new to AI-assisted coding or looking to refine your skills, these hands-on sessions will show you practical techniques using famous [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins/) data and modern tools.
 
-To build on other [UBC Library Research Commons workshops](https://ubc-library-rc.github.io/all.html) the coding examples are in R, but the principles apply to any programming language. Complete beginners are welcome, and participants who have some experience with R and the [tidyverse](https://tidyverse.org/) packages will find it easier to follow along. 
+To build on other [UBC Library Research Commons workshops](https://ubc-library-rc.github.io/all.html) the coding examples use **Python**, but the ideas apply to other languages too. Complete beginners are welcome, and participants who have used **Python** before and are comfortable with **pandas** will find it easier to follow along. 
 
 
 ## Learning objectives
@@ -23,7 +23,7 @@ To build on other [UBC Library Research Commons workshops](https://ubc-library-r
 By the end of these three workshops, you will be able to:
 
 1. **write effective prompts** for ai tools using the prompt formula (context + task + constraints + format)
-2. **create data visualizations** with ggplot2 by describing your intent to an ai
+2. **create data visualizations** with matplotlib (and pandas) by describing your intent to an ai
 3. **build a complete data analysis workflow** from data loading to visualization using Cursor
 
 
@@ -44,4 +44,4 @@ For more detail see the [Workshops](content/workshops/) page.
 ## Get ready! 
 {: .no_toc }
 
-The first workshop introduces concepts; in the second and third we invite you to practice with hands-on activities. Follow the **[Setup](content/setup.md)** page to install **R**, **Cursor**, and the **Palmer Penguins** data before you begin.
+The first workshop introduces concepts; in the second and third we invite you to practice with hands-on activities. Follow the **[Setup](content/setup.md)** page to install **Python** (pandas, matplotlib), **Cursor**, and the **Palmer Penguins** data before you begin.

@@ -1,7 +1,7 @@
 # Data Analysis with Cursor
 ### UBC Library Research Commons
 
-**Description:** Learn to use Cursor AI for data analysis in three 30-minute workshops. Master the fundamentals of effective prompts, create data visualizations with ggplot2, and build complete analysis workflows using AI-assisted coding.
+**Description:** Learn to use Cursor AI for data analysis in three 30-minute workshops. Master the fundamentals of effective prompts, create data visualizations with **pandas** and **matplotlib**, and build complete analysis workflows using AI-assisted coding.
 
 **Link to workshop:** https://ubc-library-rc.github.io/data_analysis_with_cursor/
 
