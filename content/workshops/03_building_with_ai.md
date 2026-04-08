@@ -9,7 +9,7 @@ nav_order: 3
 
 Put it all together: load data, clean it, summarize it, plot it.
 
-**Duration:** 30 min | **Tools:** Cursor, R, RStudio or R Markdown
+**Duration:** 30 min | **Tools:** Cursor, Python (pandas, matplotlib)
 
 ---
 
@@ -33,7 +33,9 @@ Put it all together: load data, clean it, summarize it, plot it.
 
 ## The Project: Quick Penguin Report
 
-Create a new `.R` file and use Cursor Chat to build these 4 steps:
+Create a new **Jupyter notebook** (`.ipynb`) for this project. This format works great in Cursor **and** Google Colab, so your code outputs appear just like a report.
+
+Build your workflow step by step below using Cursor Chat to generate and refine analysis code (see steps below).
 
 ---
 
@@ -41,17 +43,18 @@ Create a new `.R` file and use Cursor Chat to build these 4 steps:
 
 **Chat prompt:**
 ```
-Load data/penguins.csv with readr. Show: how many rows, 
-column names, and any missing values per column.
+Load data/penguins.csv with pandas. Show: how many rows,
+column names, and missing values per column.
 ```
 
 **Expected output:**
-```r
-library(tidyverse)
-penguins <- read_csv("data/penguins.csv")
-cat("Rows:", nrow(penguins), "\n")
-names(penguins)
-penguins |> summarise(across(everything(), ~ sum(is.na(.))))
+```python
+import pandas as pd
+
+penguins = pd.read_csv("data/penguins.csv")
+print("Rows:", len(penguins))
+print(penguins.columns.tolist())
+print(penguins.isna().sum())
 ```
 
 ---
@@ -60,14 +63,14 @@ penguins |> summarise(across(everything(), ~ sum(is.na(.))))
 
 **Chat prompt:**
 ```
-Remove rows with missing values. Show how many rows we had 
+Remove rows with missing values. Show how many rows we had
 before and after.
 ```
 
 **Expected output:**
-```r
-penguins_clean <- penguins |> drop_na()
-cat("Before:", nrow(penguins), "| After:", nrow(penguins_clean), "\n")
+```python
+penguins_clean = penguins.dropna()
+print("Before:", len(penguins), "| After:", len(penguins_clean))
 ```
 
 ---
@@ -76,19 +79,21 @@ cat("Before:", nrow(penguins), "| After:", nrow(penguins_clean), "\n")
 
 **Chat prompt:**
 ```
-Group by species and show: count, average bill length, 
-average body mass. Round to 1 decimal place.
+Group by species and show: count, average bill length,
+average body mass. Round averages to 1 decimal place.
 ```
 
 **Expected output:**
-```r
-penguins_clean |>
-  group_by(species) |>
-  summarise(
-    n = n(),
-    avg_bill = round(mean(bill_length_mm), 1),
-    avg_mass = round(mean(body_mass_g), 1)
-  )
+```python
+summary = (
+    penguins_clean.groupby("species")
+    .agg(
+        n=("bill_length_mm", "count"),
+        avg_bill=("bill_length_mm", lambda s: round(s.mean(), 1)),
+        avg_mass=("body_mass_g", lambda s: round(s.mean(), 1)),
+    )
+)
+print(summary)
 ```
 
 ---
@@ -98,20 +103,36 @@ penguins_clean |>
 **Chat prompt:**
 ```
 Scatter plot: bill length (x-axis) vs flipper length (y-axis).
-Color by species. Add title and axis labels. Use minimal theme.
+Color by species. Add title and axis labels. Use matplotlib.
 ```
 
 **Expected output:**
-```r
-penguins_clean |>
-  ggplot(aes(x = bill_length_mm, y = flipper_length_mm, color = species)) +
-  geom_point(alpha = 0.7, size = 2) +
-  labs(
-    title = "Penguin Measurements",
-    x = "Bill Length (mm)",
-    y = "Flipper Length (mm)"
-  ) +
-  theme_minimal()
+```python
+import matplotlib.pyplot as plt
+
+species_colors = {
+    "Adelie": "#4878d0",
+    "Chinstrap": "#ee854a",
+    "Gentoo": "#6acc65",
+}
+
+fig, ax = plt.subplots(figsize=(6, 4))
+for sp in ["Adelie", "Chinstrap", "Gentoo"]:
+    sub = penguins_clean[penguins_clean["species"] == sp]
+    ax.scatter(
+        sub["bill_length_mm"],
+        sub["flipper_length_mm"],
+        c=species_colors[sp],
+        label=sp,
+        alpha=0.7,
+        s=20,
+    )
+
+ax.set_title("Penguin Measurements")
+ax.set_xlabel("Bill Length (mm)")
+ax.set_ylabel("Flipper Length (mm)")
+ax.legend(title="Species")
+plt.show()
 ```
 
 ---
@@ -143,7 +164,7 @@ Pick one to extend your analysis:
 ## Key Takeaways
 
 1. **Start simple** — load, clean, summarize, plot
-2. **Use Chat for guidance** — don't try to memorize R syntax
+2. **Use Chat for guidance** — don't try to memorize pandas or matplotlib syntax
 3. **Test after each step** — catch mistakes early
 4. **Iterate** — your first version won't be perfect, and that's OK
 
@@ -152,8 +173,8 @@ Pick one to extend your analysis:
 ## Resources
 
 - [Cursor docs](https://docs.cursor.com)
-- [R for Data Science](https://r4ds.hadley.nz)
-- [ggplot2 examples](https://ggplot2.tidyverse.org/reference/)
+- [pandas documentation](https://pandas.pydata.org/docs/)
+- [Matplotlib documentation](https://matplotlib.org/stable/index.html)
 
 ---
 
