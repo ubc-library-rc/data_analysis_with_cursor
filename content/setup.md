@@ -58,10 +58,6 @@ If `pip` is not found, try `pip3` or `python -m pip install pandas matplotlib no
 
 4. Check that Python runs: `python --version`
 
-- IDE from [cursor.com](https://cursor.com)
-- Download and install (the free tier is enough for purpose of our workshops)
-- Chat shortcut: `Cmd+L` (Mac) or `Ctrl+L` (Windows/Linux)
-
 ---
 
 ### Cursor
