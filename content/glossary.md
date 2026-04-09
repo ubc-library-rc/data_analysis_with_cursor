@@ -9,7 +9,6 @@ has_toc: T
 
 |Bias|A systematic error in the LLM. This is brought into the LLM during the training phase.|
 |Comma-separated values (CSV)|A plain-text table format (often <code>.csv</code>). The Palmer Penguins dataset in this series is a CSV you load with pandas.|
-|Cursor|An AI-assisted code editor (IDE). You use Chat (<code>Cmd+L</code> / <code>Ctrl+L</code>) to ask for code, explanations, or edits in your project.|
 |Dataframe|Data structure constructed with rows and columns that can contain many different types of data (numbers and characters).|
 |Data type|The kind of data in your dataset. For example, numbers are numeric data and letters are character data.|
 |Data structures|Shapes/formats the entire dataset is saved as. These could be a dataframe, a matrix, a list, a vector to name a few. Statistical analyses and graph generation require data in a specific format.|
