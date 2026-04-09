@@ -9,7 +9,7 @@ nav_order: 1
 
 Learn how LLMs work and write better prompts.
 
-**Duration:** 30 min | **Tools:** Cursor, Python
+**Duration:** 30 min
 
 ---
 
@@ -134,7 +134,7 @@ Notice how these are vague or missing context. As you practice, try to avoid the
 1. **Be specific** — the more detail, the better
 2. **Be concise** — don't ramble
 3. **State your format** — say exactly what output you want (table, plot, list, etc.)
-4. **Tools matter** — mention which Python libraries to use (pandas, matplotlib, etc.)
+4. **Tools matter** — when you want code, say which language or libraries you have in mind (e.g. pandas)—you can still practice the wording without installing anything
 
 ---
 

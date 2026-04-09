@@ -11,24 +11,52 @@ nav_order: 1.3
 
 The concepts we cover are general and apply to many languages and tools. In this series we demonstrate how to code with Python using the Cursor Integrated Development Environment (IDE), which provides a simple way to incorporate AI into the coding process. What you learn throughout the workshop can apply to many environments and tools, and this is simply one way of doing things.
 
-Complete this page before the hands-on workshops (especially workshops 2 and 3). We will use **Cursor** for AI-assisted coding and **Python** based notebooks to run the examples with **pandas** and **matplotlib** popular libraries.
+Complete this page before the hands-on workshops (especially workshops 2 and 3). We will use **Cursor** for AI-assisted coding and **Python** with **Jupyter notebooks** (`.ipynb`) to run examples, together with **pandas** and **matplotlib**.
 
-We use Python in these workshops because it is widely used for data analysis and it integrates well ith Cursor. You can easily write and run Python code alongside AI chat in the same workspace which is very practical for real projects.
+We use Python in these workshops because it is widely used for data analysis and it integrates well with Cursor. You can write and run Python code alongside AI chat in the same workspace, which is practical for real projects.
 
-{: .warn}
-**Only use [Cursor](https://cursor.com/home) with files that can be made public.** All files in a Cursor _workspace_ may be indexed and shared with AI tools, even if you don't enter them into the chat. Never use Cursor with personal or confidential data.
-
-More detail: [UBC AI guidance](ubc_ai_policy.html).
 
 ---
 
 ## What you need
 
-### **Python**
+### Python, packages, and Jupyter
 
-**Stack:** Python **3.11 or newer**, plus **pandas** (for tables) and **matplotlib** (for plots) libraries. 
+**Stack:** Python **3.11 or newer**, plus:
 
-### **Cursor** 
+| Package / tool | Role |
+|----------------|------|
+| **pandas** | Load and work with tables |
+| **matplotlib** | Create plots |
+| **notebook** | Jupyter Notebook server so you can open and run `.ipynb` files (used in the workshops) |
+
+Install all three with **pip** (after Python is working):
+
+```bash
+pip install pandas matplotlib notebook
+```
+
+If `pip` is not found, try `pip3` or `python -m pip install pandas matplotlib notebook`.
+
+---
+
+### Installing Python (choose one path)
+
+#### If you are new to Python and don’t already use a distribution
+
+**Miniconda** is a small installer that includes **conda**, a package manager that makes it straightforward to install Python and libraries in an isolated environment. We recommend it when you don’t have another preferred setup.
+
+1. Download **Miniconda** for your OS from the official docs: **[Miniconda — latest installer links](https://docs.anaconda.com/miniconda/install/)** (follow the install steps for Windows, macOS, or Linux).
+2. Open a terminal (**Anaconda Prompt** on Windows, or Terminal on Mac/Linux).
+3. Create an environment and install what we need (example name: `workshop`):
+
+   ```bash
+   conda create -n workshop python=3.12 -y
+   conda activate workshop
+   conda install -c conda-forge pandas matplotlib notebook -y
+   ```
+
+4. Check that Python runs: `python --version`
 
 - IDE from [cursor.com](https://cursor.com)
 - Download and install (the free tier is enough for purpose of our workshops)
@@ -40,9 +68,19 @@ More detail: [UBC AI guidance](ubc_ai_policy.html).
 
 ![Cursor logo](../img/cursor_icon_download.png)
 
-1. Download **[cursor.com](https://cursor.com)** → choose your OS → install.
-2. Open Cursor.
+1. Download Cursor from **[cursor.com](https://cursor.com)** and install it for your operating system.
+2. Open Cursor and sign in if prompted. The **free tier** is enough for these workshops (no need to create account).
 3. Open Chat: **`Cmd+L`** (Mac) or **`Ctrl+L`** (Windows / Linux).
+
+**Policy Notes for Using Cursor :**
+
+- **[Privacy Policy](https://www.cursor.com/privacy)** — how Cursor collects and uses data when you use the app.
+- **[Pricing](https://www.cursor.com/pricing)** — free vs paid features; check what your use case needs.
+
+{: .warn}
+**Only use [Cursor](https://cursor.com/home) with files that can be made public.** All files in a Cursor _workspace_ may be indexed and shared with AI tools, even if you don't enter them into the chat. Never use Cursor with personal or confidential data.
+
+More detail: [UBC AI guidance](ubc_ai_policy.html).
 
 ---
 
