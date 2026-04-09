@@ -40,6 +40,10 @@ Understanding how many tokens your prompt uses is a practical way to see this in
 **🔗 [Open Tiktokenizer in new tab](https://tiktokenizer.vercel.app/)**
 
 > - "10 facts about penguin demographics and behaviors. What makes penguins so fascinating..."
+<<<<<<< HEAD
+=======
+
+>>>>>>> 973c656204b510c988438e7fb3c10aa61ea6d807
 
 
 ---
