@@ -23,7 +23,7 @@ We use Python in these workshops because it is widely used for data analysis and
 
 ### Python, packages, and Jupyter
 
-**Stack:** Python **3.11 or newer**, plus:
+**Stack:** Python **3.10 or newer**, plus:
 
 | Package / tool | Role |
 |----------------|------|
@@ -31,15 +31,36 @@ We use Python in these workshops because it is widely used for data analysis and
 | **matplotlib** | Create plots |
 | **notebook** | Jupyter Notebook server so you can open and run `.ipynb` files (used in the workshops) |
 
-Install all three with **pip** (after Python is working):
-
-```bash
-pip install pandas matplotlib notebook
-```
-
-If `pip` is not found, try `pip3` or `python -m pip install pandas matplotlib notebook`.
-
 ---
+
+> ### Quickest Demo: *Set Up a Python venv Inside Cursor*
+>
+> **Use this ultra-fast method to get up and running for the workshop (in Cursor only).**  
+> For “real” projects, try using a more managed workflow (like conda or a venv with pinned versions and environment files as covered below).
+>
+> **How-To:**
+>
+> 1. **Open a notebook** (`.ipynb`) in Cursor and use the kernel picker.
+>
+>    ![Step 1: Select another kernel](../img/step-1-select-another-kernel.png)
+>
+> 2. **Choose** **Python Environments...**.
+>
+>    ![Step 2: Select Python environment](../img/step-2-select-python-environment.png)
+>
+> 3. **Select “Create Python Environment”** and choose **Venv**.
+>
+>    ![Step 3: Choose venv type](../img/step-3-choose-venv-type.png)
+>
+> 4. **Pick the Python interpreter** Cursor should use to create the environment.
+>
+>    ![Step 4: Select Python interpreter](../img/step-4-select-python-interpreter.png)
+>
+> 5. **Once created, install needed packages for the workshop:**
+>
+>    ```bash
+>    pip install pandas matplotlib notebook
+>    ```
 
 ### Installing Python (choose one path)
 
@@ -52,13 +73,13 @@ If `pip` is not found, try `pip3` or `python -m pip install pandas matplotlib no
 3. Create an environment and install what we need (example name: `workshop`):
 
    ```bash
-   conda create -n workshop python=3.12 -y
+   conda create -n workshop python=3.10 -y
    conda activate workshop
    conda install -c conda-forge pandas matplotlib notebook -y
    ```
 
 4. Check that Python runs: `python --version`
-
+   
 ---
 
 ### Cursor
