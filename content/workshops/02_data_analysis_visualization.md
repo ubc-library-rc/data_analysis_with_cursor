@@ -48,6 +48,8 @@ species_colors = {
 
 **Framework for Choosing a Chart Type**
 
+For an interactive guide to matching data types and questions to chart types, see **[From Data to Viz](https://www.data-to-viz.com/)**.
+
 Before jumping in to create your chart, lets step back and think about your data and **the story you want to tell**. When choosing a visualization type, ask yourself:
 
 - **What do I want to show?**
@@ -70,9 +72,8 @@ Before jumping in to create your chart, lets step back and think about your data
 Most of the time, a simple bar, line, or scatter plot is your best tool—they’re recognized and easy to interpret. Fancier visualizations exist, but they’re only helpful if they make your data more understandable or support your message.
 
 {:.callout-info}
-Want visuals and more advice? Some further resources for chart type selection:
+Want visuals and more advice? Another resource for chart type selection:
 - [FT Visual Vocabulary](https://ft-interactive.github.io/visual-vocabulary/)
-- [From Data to Viz](https://www.data-to-viz.com/)
 
 
 ---

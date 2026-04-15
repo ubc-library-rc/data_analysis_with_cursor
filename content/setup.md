@@ -16,6 +16,7 @@ Complete this page before the hands-on workshops (especially workshops 2 and 3).
 We use Python in these workshops because it is widely used for data analysis and it integrates well with Cursor. You can write and run Python code alongside AI chat in the same workspace, which is practical for real projects.
 
 
+
 ---
 
 ## What you need
