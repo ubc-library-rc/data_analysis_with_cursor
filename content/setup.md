@@ -23,7 +23,7 @@ We use Python in these workshops because it is widely used for data analysis and
 
 ### Python, packages, and Jupyter
 
-**Stack:** Python **3.10 or newer**, plus:
+In this workshop we use Python **3.10 or newer**, plus these libraries and packages:
 
 | Package / tool | Role |
 |----------------|------|
@@ -62,6 +62,11 @@ We use Python in these workshops because it is widely used for data analysis and
 >    pip install pandas matplotlib notebook
 >    ```
 
+### If you are familiar with Python
+{: .no_toc }
+Use your preferred Python installation and make sure the libraries and packages in the table above are installed (e.g. with `python -m pip install pandas matplotlib notebook`).
+
+
 ### Installing Python (choose one path)
 
 #### If you are new to Python and don’t already use a distribution
@@ -87,23 +92,28 @@ We use Python in these workshops because it is widely used for data analysis and
 ![Cursor logo](../img/cursor_icon_download.png)
 
 1. Download Cursor from **[cursor.com](https://cursor.com)** and install it for your operating system.
-2. Open Cursor and sign in if prompted. The **free tier** is enough for these workshops (no need to create account).
-3. Open Chat: **`Cmd+L`** (Mac) or **`Ctrl+L`** (Windows / Linux).
+2. Open Cursor. You will be prompted to sign in or create a free account.
+3. Follow the setup prompts (plugins are not required). 
+4. At the Cursor start page, open a chat: **`Cmd+L`** (Mac) or **`Ctrl+L`** (Windows / Linux).
 
 **Policy Notes for Using Cursor :**
 
 - **[Privacy Policy](https://www.cursor.com/privacy)** — how Cursor collects and uses data when you use the app.
-- **[Pricing](https://www.cursor.com/pricing)** — free vs paid features; check what your use case needs.
+- **[Pricing](https://www.cursor.com/pricing)** — free vs paid features; check what your use case needs (this workshop uses the free version).
 
 {: .warn}
-**Only use [Cursor](https://cursor.com/home) with files that can be made public.** All files in a Cursor _workspace_ may be indexed and shared with AI tools, even if you don't enter them into the chat. Never use Cursor with personal or confidential data.
+Only use Cursor with files that can be made public. All files in a Cursor _workspace_ may be indexed and shared with AI tools, even if you don't enter them into the chat. Never use Cursor with personal or confidential data.
 
 More detail: [UBC AI guidance](ubc_ai_policy.html).
 
 ---
 
-### Data — Palmer Penguins dataset
+## Download the Palmer Penguins dataset
 
+1. Create a project folder (you will open this folder later with Cursor)
+2. In your project folder, create a folder named `data`
+3. [Download penguins.csv](../data/penguins.csv) and save it in your `data` folder (right-click the link and select _Save Link As..._ or _Download Linked File As..._)
+   
 Preview of the data we'll work with:
 
 | species | island | bill_length_mm | bill_depth_mm | flipper_length_mm | body_mass_g | sex | year |
@@ -118,13 +128,9 @@ Preview of the data we'll work with:
 
 ![Palmer Penguins illustrations](../img/lter_penguins.png)
 
-**[Download dataset (CSV)](../data/penguins.csv)**
-
 **Source:** [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins/)  
 
 **Artwork:** [Illustrations](https://allisonhorst.github.io/palmerpenguins/articles/art.html) by [@allison_horst](https://twitter.com/allison_horst)
-
-Put `penguins.csv` in your project so paths match the workshops (e.g. `data/penguins.csv` next to your scripts or notebook).
 
 ---
 
