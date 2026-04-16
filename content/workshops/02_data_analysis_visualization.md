@@ -55,8 +55,7 @@ species_colors = {
 
 ![Choosing a Cursor model](../../img/cursor_model.png)
 
-Choose any of the available AI models (e.g., Cursor, GPT-4, etc.). The specific model doesn't matter too much here; all can handle these code examples.
-
+Choose **Auto mode** for now for demo and learning. This helps to get started quickly while the system handles the technical choices on the free plan.
 
 ![Cursor sample plot output](../../img/cursor_sample_plot.pmg.png)
 
