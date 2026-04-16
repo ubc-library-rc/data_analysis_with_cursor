@@ -33,34 +33,6 @@ In this workshop we use Python **3.10 or newer**, plus these libraries and packa
 
 ---
 
-> ### Quickest Demo: *Set Up a Python venv Inside Cursor*
->
-> **Use this ultra-fast method to get up and running for the workshop (in Cursor only).**  
-> For “real” projects, try using a more managed workflow (like conda or a venv with pinned versions and environment files as covered below).
->
-> **How-To:**
->
-> 1. **Open a notebook** (`.ipynb`) in Cursor and use the kernel picker.
->
->    ![Step 1: Select another kernel](../img/step-1-select-another-kernel.png)
->
-> 2. **Choose** **Python Environments...**.
->
->    ![Step 2: Select Python environment](../img/step-2-select-python-environment.png)
->
-> 3. **Select “Create Python Environment”** and choose **Venv**.
->
->    ![Step 3: Choose venv type](../img/step-3-choose-venv-type.png)
->
-> 4. **Pick the Python interpreter** Cursor should use to create the environment.
->
->    ![Step 4: Select Python interpreter](../img/step-4-select-python-interpreter.png)
->
-> 5. **Once created, install needed packages for the workshop:**
->
->    ```bash
->    pip install pandas matplotlib notebook
->    ```
 
 ### If you are familiar with Python
 {: .no_toc }
@@ -105,6 +77,36 @@ Use your preferred Python installation and make sure the libraries and packages 
 Only use Cursor with files that can be made public. All files in a Cursor _workspace_ may be indexed and shared with AI tools, even if you don't enter them into the chat. Never use Cursor with personal or confidential data.
 
 More detail: [UBC AI guidance](ubc_ai_policy.html).
+
+> ### Quickest Demo: *Set Up a Python venv Inside Cursor*
+>
+> **Use this ultra-fast method to get up and running for the workshop (in Cursor only).**  
+> For “real” projects, try using a more managed workflow (like conda or a venv with pinned versions and environment files as covered below).
+>
+> **How-To:**
+>
+> 1. **Open a notebook** (`.ipynb`) in Cursor and use the kernel picker.
+>
+>    ![Step 1: Select another kernel](../img/step-1-select-another-kernel.png)
+>
+> 2. **Choose** **Python Environments...**.
+>
+>    ![Step 2: Select Python environment](../img/step-2-select-python-environment.png)
+>
+> 3. **Select “Create Python Environment”** and choose **Venv**.
+>
+>    ![Step 3: Choose venv type](../img/step-3-choose-venv-type.png)
+>
+> 4. **Pick the Python interpreter** Cursor should use to create the environment.
+>
+>    ![Step 4: Select Python interpreter](../img/step-4-select-python-interpreter.png)
+>
+> 5. **Once created, install needed packages for the workshop:**
+>
+>    ```bash
+>    pip install pandas matplotlib notebook
+>    ```
+
 
 ---
 
