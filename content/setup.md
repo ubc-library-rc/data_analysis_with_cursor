@@ -7,8 +7,6 @@ nav_order: 1.3
 # Setup
 {: .no_toc }
 
-{:toc}
-
 The concepts we cover are general and apply to many languages and tools. In this series we demonstrate how to code with Python using the Cursor Integrated Development Environment (IDE), which provides a simple way to incorporate AI into the coding process. What you learn throughout the workshop can apply to many environments and tools, and this is simply one way of doing things.
 
 Complete this page before the hands-on workshops (especially workshops 2 and 3). We will use **Cursor** for AI-assisted coding and **Python** with **Jupyter notebooks** (`.ipynb`) to run examples, together with **pandas** and **matplotlib**.
@@ -20,8 +18,12 @@ We use Python in these workshops because it is widely used for data analysis and
 ---
 
 ## What you need
+{: .no_toc }
 
-### Python, packages, and Jupyter
+- TOC
+{:toc}
+
+## Python, packages, and Jupyter
 
 In this workshop we use Python **3.10 or newer**, plus these libraries and packages:
 
@@ -31,16 +33,22 @@ In this workshop we use Python **3.10 or newer**, plus these libraries and packa
 | **matplotlib** | Create plots |
 | **notebook** | Jupyter Notebook server so you can open and run `.ipynb` files (used in the workshops) |
 
+If you already have Python installed, skip to the Cursor section.  
+
+If you need to install Python and don't have a preferred distribution, **Miniconda** is a lightweight option: 
+
+1. Go to <https://www.anaconda.com/download/success> and download the Miniconda installer for your operating system.
+2. Run the installer and follow the prompts.
+
 ---
 
-### Cursor
+## Cursor
 
 ![Cursor logo](../img/cursor_icon_download.png)
 
-1. Download Cursor from **[cursor.com](https://cursor.com)** and install it for your operating system.
+1. Download Cursor from <https://cursor.com/download> and install it for your operating system.
 2. Open Cursor. You will be prompted to sign in or create a free account.
 3. Follow the setup prompts (plugins are not required). 
-4. At the Cursor start page, open a chat: **`Cmd+L`** (Mac) or **`Ctrl+L`** (Windows / Linux).
 
 **Policy Notes for Using Cursor :**
 
@@ -55,7 +63,8 @@ More detail: [UBC AI guidance](ubc_ai_policy.html).
 
 ---
 
-## Download the Palmer Penguins dataset
+## Palmer Penguins dataset
+Download the CSV dataset we'll use in the workshop:
 
 1. Create a project folder (you will open this folder later with Cursor)
 2. In your project folder, create a folder named `data`
@@ -76,28 +85,32 @@ Preview of the data we'll work with:
 ![Palmer Penguins illustrations](../img/lter_penguins.png)
 
 **Source:** [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins/)  
-
 **Artwork:** [Illustrations](https://allisonhorst.github.io/palmerpenguins/articles/art.html) by [@allison_horst](https://twitter.com/allison_horst)
 
 ---
 
-## Quickest Demo: Set Up a Python venv Inside Cursor
+## A Python environment for this project
+A Python environment is a separate workspace that contains its own copy of Python and any libraries you install, so your projects do not interfere with each other.
 
-Use this only as a fast way to get workshop notebooks running in Cursor.
-For long-term projects, use a more managed Python workflow (for example: pinned dependencies and reproducible environment files).
+### Option 1
+{: .no_toc }
+If you know how to create a Python environment, use your preferred method and install `pandas`, `matplotlib`, and `notebook`.
 
-Before starting this section:
-- Finish the **Cursor** section above.
-- Open your project folder in Cursor (the folder that contains `data/penguins.csv`).
+### Option 2
+{: .no_toc }
+If you're new to Python environments, use Cursor to setup an environment suitable fo this workshop.
 
-### Step-by-step (beginner friendly)
+{: .note} 
+We only recommend this as a fast way to get workshop notebooks running in Cursor. For long-term projects, use a more managed Python workflow (for example: pinned dependencies and reproducible environment files).
 
-1. In Cursor, open your project folder:
+1. In Cursor, open the project folder you created above:
    - Menu: **File -> Open Folder...**
-   - Select your workshop project folder.
-2. Create or open a notebook file (`.ipynb`):
+   - Select your workshop project folder.   
+2. Create a notebook file (`.ipynb`):
    - Menu: **File -> New File...**
    - Save it as `setup_check.ipynb` inside your project folder.
+
+   _If you don't see a **File -> New File** menu option, Cursor might have opened in "Agents" view. Go to **File -> Open Editor Window**, then start over at step 1_
 3. Open that notebook, then use the kernel selector in the top-right and choose **Select Another Kernel...**.
 
    ![Step 1: Select another kernel](../img/step-1-select-another-kernel.png)
@@ -110,50 +123,36 @@ Before starting this section:
 
    ![Step 3: Choose venv type](../img/step-3-choose-venv-type.png)
 
-6. Pick the Python interpreter Cursor should use to create the environment.
+6. Pick the Python interpreter Cursor should use to create the environment (3.10 or higher).
 
    ![Step 4: Select Python interpreter](../img/step-4-select-python-interpreter.png)
 
 7. Install workshop packages in the new environment:
+    - Menu: **Terminal -> New Terminal**
+    - Run the command below in the terminal pane.
 
    ```bash
    pip install pandas matplotlib notebook
    ```
 
 8. Quick check in a notebook cell:
+    - Near the top of the `setup_check.ipynb` file, click the **+ Code** button to add a new code block.
+    - Enter the code below, then click the triangle icon to run it.
 
    ```python
    import pandas as pd
    import matplotlib.pyplot as plt
+   print("Setup worked!")
    ```
 
 If the kernel does not switch automatically, reopen the kernel picker and select the newly created `.venv` interpreter.
 
+
 ---
 
-### If you are familiar with Python
-{: .no_toc }
-Use your preferred Python installation and make sure the libraries and packages in the table above are installed (e.g. with `python -m pip install pandas matplotlib notebook`).
-
-
-### Installing Python 
-#### If you are new to Python and don’t already use a distribution
-
-**Miniconda** is a small installer that includes **conda**, a package manager that makes it straightforward to install Python and libraries in an isolated environment. We recommend it when you don’t have another preferred setup.
-
-1. Download **Miniconda** for your OS from the official docs: **[Miniconda — latest installer links](https://docs.anaconda.com/miniconda/install/)** (follow the install steps for Windows, macOS, or Linux).
-2. Open a terminal (**Anaconda Prompt** on Windows, or Terminal on Mac/Linux).
-3. Create an environment and install what we need (example name: `workshop`):
-
-   ```bash
-   conda create -n workshop python=3.10 -y
-   conda activate workshop
-   conda install -c conda-forge pandas matplotlib notebook -y
-   ```
-
-4. Check that Python runs: `python --version`
 
 ## Quick start workshops
+{: .no_toc }
 
 1. **[Workshop 1: Fundamentals](workshops/01_fundamentals.md)**  
 2. **[Workshop 2: Data analysis & visualization](workshops/02_data_analysis_visualization.md)**  
